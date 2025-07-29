@@ -1,259 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Domine o Digital: Seu Negócio no Topo em 72h | Bruno Pinheiro</title>
-  <meta name="description" content="Transforme seu negócio local em uma máquina de vendas online em apenas 72 horas. Sites, landing pages e estratégias digitais que atraem clientes todos os dias.">
-  <meta name="keywords" content="criação de sites, landing pages, gestão de tráfego, presença digital, negócios locais, marketing digital, Bruno Pinheiro">
-  <meta property="og:title" content="Domine o Digital: Seu Negócio no Topo em 72h">
-  <meta property="og:description" content="Presença digital profissional, site pronto, WhatsApp integrado e estratégias para atrair clientes todos os dias.">
-  <meta property="og:image" content="https://seusite.com/imagem-destaque.jpg">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://seusite.com/">
-  <link rel="icon" href="/favicon.ico" />
-  <style>
-    :root {
-      --primary: #060b50;
-      --secondary: #4169E1;
-      --accent: #FFD700	;
-      --danger: #1d00c4;
-      --white: #fff;
-      --gray: #F5FFFA	;
-      --shadow: 0 4px 24px rgba(10,37,64,0.10);
-    }
-    body {
-      font-family: 'Montserrat', Arial, sans-serif;
-      margin: 0;
-      background: var(--gray);
-      color: var(--primary);
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(90deg, var(--primary) 70%, var(--secondary) 100%);
-      color: var(--white);
-      padding: 3rem 1rem 2rem 1rem;
-      text-align: center;
-      box-shadow: var(--shadow);
-    }
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-      letter-spacing: -1px;
-    }
-    header p {
-      font-size: 1.3rem;
-      font-weight: 500;
-      margin-bottom: 1.5rem;
-    }
-    .cta-main {
-      background: var(--accent);
-      color: var(--primary);
-      padding: 1.5rem 1rem;
-      text-align: center;
-      font-size: 1.3rem;
-      font-weight: 700;
-      border-radius: 12px;
-      margin: -2rem auto 2rem auto;
-      max-width: 600px;
-      box-shadow: var(--shadow);
-      position: relative;
-      z-index: 2;
-    }
-    .cta-main a {
-      display: inline-block;
-      background: var(--primary);
-      color: var(--white);
-      padding: 1rem 2.5rem;
-      border-radius: 8px;
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-top: 1rem;
-      text-decoration: none;
-      transition: background 0.2s;
-      box-shadow: 0 2px 8px rgba(0,196,140,0.15);
-    }
-    .cta-main a:hover {
-      background: var(--danger);
-      color: var(--white);
-    }
-    section.benefits {
-      padding: 2.5rem 1rem 1rem 1rem;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .benefits-list {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      margin-top: 2rem;
-    }
-    .card {
-      background: var(--white);
-      padding: 2rem 1.5rem;
-      border-radius: 12px;
-      box-shadow: var(--shadow);
-      font-size: 1.1rem;
-      font-weight: 500;
-      border-left: 6px solid var(--secondary);
-      transition: border-color 0.2s;
-    }
-    .card:hover {
-      border-left: 6px solid var(--accent);
-    }
-    .card strong {
-      font-size: 1.2rem;
-      color: var(--primary);
-      display: block;
-      margin-bottom: 0.5rem;
-    }
-    .proof {
-      background: var(--white);
-      color: var(--primary);
-      border-left: 6px solid var(--accent);
-      border-radius: 12px;
-      box-shadow: var(--shadow);
-      padding: 1.5rem 1rem;
-      margin: 2rem auto 0 auto;
-      max-width: 600px;
-      font-size: 1.1rem;
-      text-align: center;
-    }
-    .cta-footer {
-      background: var(--primary);
-      color: var(--white);
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 1.3rem;
-      font-weight: 700;
-      border-radius: 12px;
-      margin: 2rem auto;
-      max-width: 600px;
-      box-shadow: var(--shadow);
-    }
-    .cta-footer a {
-      display: inline-block;
-      background: var(--accent);
-      color: var(--primary);
-      padding: 1rem 2.5rem;
-      border-radius: 8px;
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-top: 1rem;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-    .cta-footer a:hover {
-      background: var(--danger);
-      color: var(--white);
-    }
-    footer {
-      background: var(--primary);
-      color: var(--white);
-      text-align: center;
-      padding: 1.2rem 1rem;
-      font-size: 1rem;
-      margin-top: 2rem;
-      letter-spacing: 0.5px;
-    }
-    
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.7rem; }
-      .cta-main, .cta-footer { font-size: 1.1rem; }
-      .card { font-size: 1rem; }
-    }
-
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(65, 105, 225, 0.15);
-  }
-  70% {
-    transform: scale(1.06);
-    box-shadow: 0 0 0 10px rgba(65, 105, 225, 0);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(65, 105, 225, 0);
-  }
-}
-
-.cta-main a:hover,
-.cta-footer a:hover {
-  animation: pulse 0.6s;
-  /* Mantém as outras transições */
-}
-  </style>
-  <!-- Google Fonts: Montserrat -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presença Digital Rápida</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Presença Digital em 72h: <span style="color:var(--accent)">Seu Negócio no Topo</span></h1>
-    <p>
-      Pare agora de deixar dinheiro na mesa! <br>
-      <strong>Transforme seu negócio local em uma máquina de vendas online</strong> com site profissional, WhatsApp integrado e estratégias que funcionam de verdade.
-    </p>
+
+  <!-- Cabeçalho -->
+  <header class="hero">
+    <h1><span class="destaque">Presença Digital</span> Rápida para Negócios Locais</h1>
+
+    <p class="subheadline">Desenvolvedor Web & Especialista em Negócios Digitais</p>
+    
+    <a href="https://wa.me/61981088159" class="btn-cta" target="_blank">Solicite seu Projeto Agora</a>
   </header>
 
-  <div class="cta-main">
-    <span>⚡ Vagas limitadas para quem quer <strong>resultados reais</strong> ainda este mês!</span><br>
-    <a href="https://wa.me/5561981088159?text=Quero%20dominar%20o%20digital%20com%20Bruno%20Pinheiro!" target="_blank" rel="noopener">Quero minha presença digital agora</a>
-  </div>
 
-  <section class="benefits">
-    <h2>O que você recebe ao fechar comigo:</h2>
-    <div class="benefits-list">
+  <section id="publico-alvo" class="glass-section">
+    <h2>Esse serviço é para você:</h2>
+    <ul>
+      <li>✅ Que entendeu que não dá mais pra depender só de indicação e panfletagem</li>
+      <li>✅ Profissionais que querem lotar a agenda</li>
+      <li>✅ Lojistas e comerciantes que desejam aumentar o alcance</li>
+      <li>✅ Autônomos e prestadores de serviço que querem mais visibilidade</li>
+      <li>✅ Qualquer empreendedor que queira vender mais e sair na frente da concorrência</li>
+    </ul>
+  </section>
+
+  <section id="servicos">
+    <h2>O que eu faço por você</h2>
+    <div class="cards">
       <div class="card">
-        <strong>✓ Site Profissional e Exclusivo</strong>
-        Sua presença online, 100% responsivo e pronto para converter visitantes em clientes.
+        <h3>Sites Profissionais</h3>
+        <p>Criação de sites estratégicos com foco em posicionamento e conversão.</p>
       </div>
       <div class="card">
-        <strong>✓ Landing Pages de Alta Conversão</strong>
-        Páginas criadas para vender, com copy persuasiva e design que inspira confiança.
+        <h3>Landing Pages Matadoras</h3>
+        <p>Landing pages com copy agressiva e persuasiva, pronta para conversão.</p>
       </div>
       <div class="card">
-        <strong>✓ WhatsApp Integrado</strong>
-        Botão direto para fechar vendas e tirar dúvidas, sem barreiras para o cliente agir.
-      </div>
-      <div class="card">
-        <strong>✓ Gestão de Tráfego Inteligente</strong>
-        Estratégias para atrair clientes todos os dias, investindo apenas no que traz retorno.
-      </div>
-      <div class="card">
-        <strong>✓ Consultoria e Estratégia Personalizada</strong>
-        Você não fica sozinho: orientação para crescer e dominar o digital de verdade.
+        <h3>Gestão de Tráfego Local</h3>
+        <p>Panfleto vai pro lixo. Outdoor ninguém presta atenção. Aqui, cada centavo vira cliente: anúncios certeiros que colocam seu negócio na frente de quem já quer comprar. Sem desperdício. Só resultado.</p>
       </div>
     </div>
   </section>
 
- <!--<div class="proof">
-    <strong>🚀 Garantia de Satisfação:</strong> <br>
-    Se em 30 dias você não sentir diferença no seu negócio, devolvo seu investimento. <br>
-    <span style="color:var(--secondary); font-weight:700;">Sem enrolação. Sem risco.</span>
-  </div>-->
-
-  <div class="cta-footer">
-    <span>💬 Pronto para lotar sua agenda e vender todos os dias?</span><br>
-    <a href="https://wa.me/5561981088159?text=Quero%20dominar%20o%20digital%20com%20Bruno%20Pinheiro!" target="_blank" rel="noopener">Falar com Bruno no WhatsApp</a>
-    <div style="margin-top:1rem; font-size:0.95rem; color:rgba(255,255,255,0.8);">
-      Atendimento exclusivo para negócios locais, autônomos e empreendedores.
+  <section id="depoimentos">
+    <h2>O que estão dizendo:</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"Meu negócio nunca teve tanto movimento. O site ficou sensacional!"</p>
+        <strong>Maria L., Esteticista</strong>
+      </div>
+      <div class="testimonial">
+        <p>"A agenda lotou em uma semana. Tráfego local é um canhão!"</p>
+        <strong>João P., Personal Trainer</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Tive retorno no primeiro mês. Recomendo de olhos fechados."</p>
+        <strong>Ana C., Nutricionista</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Me senti seguro desde o início. Atendimento personalizado!"</p>
+        <strong>Carlos T., Advogado</strong>
+      </div>
+      <div class="testimonial">
+        <p>"A copy realmente vende. Foi a melhor decisão que tomei."</p>
+        <strong>Fernanda R., Psicóloga</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Meu salão dobrou de clientes com o tráfego e o novo site."</p>
+        <strong>Juliana M., Cabeleireira</strong>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section id="faq">
+    <h2>Dúvidas Frequentes</h2>
+    <details>
+      <summary>Quanto tempo leva para entregar o site?</summary>
+      <p>De 7 a 10 dias, dependendo do nível de personalização e estrutura.</p>
+    </details>
+    <details>
+      <summary>Vocês também fazem a copy do site?</summary>
+      <p>Sim, todas as páginas são entregues com copy profissional estratégica.</p>
+    </details>
+    <details>
+      <summary>Quais os meios de pagamento?</summary>
+      <p>Pix, transferência bancária ou parcelado via cartão.</p>
+    </details>
+    <details>
+      <summary>O que é tráfego local?</summary>
+      <p>São anúncios digitais que alcançam pessoas próximas à sua empresa.</p>
+    </details>
+  </section>
 
   <footer>
-    Desenvolvido por <strong>Bruno Pinheiro</strong> | Soluções Digitais <br>
-    <span style="font-size:0.95em;"></span>
+    <p>Bruno Pinheiro | Soluções Digitais para Negócios Locais</p>  <!-- (Conteúdo omitido aqui para foco no formato, mas já está completo no código anterior.) -->
+  <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/61981088159" class="whatsapp-float" target="_blank">
+      <img class="whatsapp-float-img"  src="assets/whatsapp.png" alt="Fale no WhatsApp" href="https://wa.me/61981088159" class="whatsapp-float" target="_blank">
+    </a>
   </footer>
-  <!--
-    ===== INSTRUÇÕES DE USO DO TEMPLATE =====
-    1. Altere os textos, cores e links conforme sua necessidade.
-    2. Para mudar o WhatsApp, edite os links com seu número.
-    3. Para adicionar depoimentos, insira novos blocos .proof ou cards.
-    4. Otimize as imagens e meta tags para seu negócio.
-    5. Use este template para qualquer serviço digital!
-  -->
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,291 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #000000, #0f0f0f);
+  color: #ffffff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* NEON VERDE UNIVERSAL */
+.neon-glow {
+  box-shadow: 0 0 12px #00ff88, 0 0 24px #00ff88, 0 0 36px #00ff88;
+  border: 1px solid #00ff88;
+}
+
+/* Header */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(145deg, #1a1a1a, #121212);
+  border-bottom: 1px solid #00ff88;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero h1 {
+  background: linear-gradient(120deg, #00ff88, #00ffcc 20%, #00ff88);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: brilhoReflexo 9s ease-in-out infinite;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 10px;
+
+}
+
+.hero .destaque {
+  color: #00ff88;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.subheadline {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: #e0e0e0;
+  margin-bottom: 2.2rem;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: transparent;
+  color: #00ff88;
+  border: 2px solid #00ff88;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;  
+  box-shadow: 0 0 15px #00ffcc;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+
+.btn-cta:hover {
+  background-color: #00ffcc;
+  color: #000;
+  text-shadow: none;
+  box-shadow: 0 0 20px #00ff88, 0 0 40px #00ffcc;
+}
+/* Seções com vidro */
+.glass-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 320px;
+  backdrop-filter: blur(10px);
+}
+
+/* Lista com check */
+
+#publico-alvo{
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 136, 0.3);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+#publico-alvo ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#publico-alvo li {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+#publico-alvo h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Cards de serviços */
+#servicos {
+  padding: 2rem 1rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#servicos h2 {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 320px;
+  text-align: left;
+  border: 1px solid rgba(0, 255, 136, 0.4);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00ff88, 0 0 30px #00ff88;
+}
+
+/* Depoimentos */
+#depoimentos {
+  padding: 2rem 1rem;
+  background: #111;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#depoimentos h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.testimonial {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid #00ff88;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  font-style: italic;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+/* FAQ */
+#faq {
+  padding: 2rem 1rem;
+  max-width: 320px;
+  width: 90%;
+  margin: auto;
+}
+
+#faq h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+details {
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+}
+
+summary {
+  font-weight: bold;
+  color: #00ff88;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #00ff88;
+  background: #0a0a0a;
+}
+
+/* Botão WhatsApp */
+.whatsapp-float{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 200;
+  border-radius: 50%; /* Deixa o botão redondo */
+  background: transparent;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float-img{
+   width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Deixa a imagem redonda */
+  box-shadow: none;   /* Remove sombra da imagem */
+  border: none;       /* Remove qualquer borda */
+  background: transparent;
+  display: block;
+  margin: 0;
+    box-shadow: 0 0 25px #00ff88;
+
+}
+
+@keyframes brilhoReflexo {
+  0% {
+    background-position: -100% -100%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .testimonial {
+    max-width: 90%;
+  }
+
+  .whatsapp-float-img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .whatsapp-float:hover {
+  box-shadow: 0 0 30px #00ff88, 0 0 50px #00ff88;
+}
+}
